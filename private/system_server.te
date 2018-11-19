@@ -817,6 +817,9 @@ allow system_server functionfs:file rw_file_perms;
 # allow system_server to look into theme resources
 allow system_server theme_data_file:dir search;
 
+# Allow Substratum Service
+allow system_server default_android_service:service_manager add;
+
 ###
 ### Neverallow rules
 ###
